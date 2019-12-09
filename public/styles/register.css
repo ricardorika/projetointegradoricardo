@@ -1,0 +1,29 @@
+body{
+    background-color: rgb(59, 59, 59);
+  }
+
+  h1{
+    color: white;
+    font-family: fantasy;
+  }
+
+  form label {
+    color: white;
+    font-family: sans-serif;
+  }
+
+  form div input.form-control {
+    background-color: white;
+  }
+
+  form div input.form-control:focus {
+  background-color: white;
+}
+
+  form div select.form-control {
+    background-color: white;
+  }
+
+  form div select.form-control:focus {
+    background-color: white;
+  }

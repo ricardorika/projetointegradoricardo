@@ -1,0 +1,13 @@
+body{
+    background-color: rgb(59, 59, 59);
+  }
+
+  h1{
+    color: white;
+    font-family: fantasy;
+  }
+
+  div label {
+    color: white;
+    font-family: sans-serif;
+  }

@@ -1,0 +1,156 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+  <head>
+    <meta charset="utf-8">
+    <title>
+      {% block title%} {% endblock %}
+    </title>
+    <meta name="viewport" content="width=device-width, user-scalable=no">
+    <link rel="stylesheet" href="styles/base.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/4.3.1/css/bootstrap.min.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.10.2/css/all.min.css">
+    <link rel="stylesheet" href="//cdnjs.cloudflare.com/ajax/libs/toastr.js/latest/css/toastr.min.css">
+    {% block styles %}
+    {% endblock %}
+  </head>
+  <body style="background-image: url(https://www.significadofacil.com/wp-content/uploads/2019/07/background-1000x500.jpg)">
+    <div class="container">
+      <header>
+        <br>
+
+        <form class="form-inline my- my-lg-2 d-flex justify-content-center">
+            <div class="logo">
+                <img src="https://ishoes.com.br/imagens_do_site/logo-aprovado-final.png" alt="">
+              </div>
+          <input class="form-control mr-sm-1 " type="search" placeholder="Digite um produto" aria-label="Search">
+          <button class="btn btn-outline-warning my-2 my-sm-0" type="submit">Pesquisar</button>
+        </form>
+        <br>
+      <nav class="navbar navbar-expand-lg navbar navbar-white bg-white mr-2">
+        <a class="navbar-brand ml-5 " href="/">iShoes Calçados</a>
+        <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+          <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse" id="navbarSupportedContent">
+          <ul class="navbar-nav mr-auto">
+            <li class="nav-item ">
+              <a class="nav-link btn btn-dark ml-5" href="/"><strong>Página inicial</strong></a>
+            </li>
+            <li class="nav-item ">
+              <a class="nav-link btn btn-dark ml-5" href="/register"><strong>Cadastre-se</strong></a>
+            </li>
+
+            <!--<li class="nav-item">
+              <a class="nav-link" href="/products">Produtos</a>
+            </li>-->
+
+            <li class="nav-item ">
+              <a class="nav-link btn btn-dark ml-5" href="/contact"><strong>Contato</strong></a>
+            </li>
+            <div class="dropdown">
+                <button class="dropdown-toggle mr-1 btn btn-dark font-weight-bold ml-5" type="button" id="dropdownMenuButton" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                  Categorias
+                </button>
+                <div class="page dropdown-menu ml-4" aria-labelledby="dropdownMenuButton">
+                  {% for item in categories %}
+                    <li><a class="categoriesNames nav-link btn btn-dark" href="/c/{{ item.slug }}">{{ item.name }}</a></li>
+                  {% endfor %}
+                </div>
+              </div>
+          </ul>
+          <span class="float-right mr-4">
+            <a href="/cart">
+              <i class="cart fas fa-shopping-cart mr-2"></i>
+              <span class="notifications badge badge-danger" id="cart-items"></span>
+            </a>
+          </span>
+
+        </div>
+      </nav>
+    </header>
+      <div class="mt-5">
+      {% block content %}
+      {% endblock %}
+      </div>
+
+<footer class="page-footer font-small stylish-color-dark pt-4" style="background-image: url(http://mannatresorts.com/wp-content/uploads/2018/09/footer-background.png)">
+  <hr>
+    <div class="container text-center text-md-left">
+      <div class="row">
+        <div class="col-md-4 mx-auto">
+            <h5 class="font-weight-bold text-uppercase mt-3 mb-4">iShoes Calçados</h5>
+            <p>
+                CNPJ: 00.000.000/0000-00 <br>
+                CEP: 00000-000           <br>
+                Rua Teste, 207           <br>
+                Bairro: Teste            <br>
+                Cidade: Erechim / RS     <br>
+                Telefone: 54 1234-5678</p>
+          </div>
+        <div class="col-md-4 mx-auto">
+            <h5 class="font-weight-bold text-uppercase mt-3 mb-4">HORÁRIO DE ATENDIMENTO</h5>
+            <p>Seg. à Sex: 8h às 18h. <br>
+               Sáb: 8h às 12h.        <br>
+               Dom e Feriados: Fechado.</p>
+          </div>
+        <hr class="clearfix w-100 d-md-none">
+        <div class="col-md-2 mx-auto">
+          <h5 class="font-weight-bold text-uppercase mt-3 mb-4">Siga-nos nas redes sociais</h5>
+          <!-- Links das redes sociais -->
+          <ul class="list-unstyled">
+            <li>
+              <a href="https://pt-br.facebook.com/">Facebook</a>
+            </li>
+            <li>
+              <a href="https://twitter.com/login?lang=pt">Twitter</a>
+            </li>
+            <li>
+              <a href="https://www.instagram.com/?hl=pt-br">Instagram</a>
+            </li>
+          </ul>
+        </div>
+      </div>
+    </div>
+  <hr>
+  <div class="text-center text-muted">
+    <p>Redes sociais</p>
+  </div>
+    <!-- Social buttons -->
+    <!-- Imagns das redes sociais na footer -->
+    <ul class="list-unstyled list-inline text-center">
+      <li class="list-inline-item">
+        <a href="https://pt-br.facebook.com/" class="btn-floating btn-fb mx-3">
+          <i class="fab fa-facebook-f">Facebook</i>
+        </a>
+      </li>
+      <li class="list-inline-item">
+        <a href="https://twitter.com/login?lang=pt" class="btn-floating btn-tw mx-3">
+          <i class="fab fa-twitter">Twitter</i>
+        </a>
+      </li>
+      <li class="list-inline-item">
+        <a href="https://plus.google.com/?hl=pt-BR" class="btn-floating btn-gplus mx-3">
+          <i class="fab fa-google-plus-g">Google Plus</i>
+        </a>
+      </li>
+      <li class="list-inline-item">
+        <a href="https://br.linkedin.com" class="btn-floating btn-li mx-3">
+          <i class="fab fa-linkedin-in">Linkedin</i>
+        </a>
+      </li>
+    </ul>
+    <!-- Parte inferior da footer -->
+    <div class="text-center text-muted">
+        <p class="small">iShoesCalcados.com.br <i class="fas fa-copyright"></i> Todos direitos reservados</p>
+      </div>
+    </div>
+  </footer>
+  <!-- scripts -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.4.1/jquery.min.js" charset="utf-8"></script>
+    <script src="//cdnjs.cloudflare.com/ajax/libs/toastr.js/latest/js/toastr.min.js" charset="utf-8"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js" integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM" crossorigin="anonymous"></script>
+    <script src="/js/base.js" charset="utf-8"></script>
+    {% block script %}
+    {% endblock %}
+  </body>
+</html>

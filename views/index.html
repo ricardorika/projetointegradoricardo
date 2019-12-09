@@ -1,0 +1,120 @@
+{% extends './layouts/base.html' %}
+{% block content %}
+<h1 class="display-4 text-center">iShoes Calçados</h1>
+<hr />
+
+<div class="cards d-flex justify-content-center">
+  <div class="mr-5 col-2" style="width: 10rem;">
+    <img src="https://png.pngtree.com/templates/md/20180616/md_5b250d14c00e6.jpg" width="146px" height="146px"  alt="">
+    <div class="underimages">
+      <p class="ml-2">Rápida entrega
+                      Frete Grátis para todo o Brasil
+    </p>
+    </div>
+  </div>
+
+  <div class="mr-5 col-2" style="width: 10rem;" >
+    <img src="https://media.istockphoto.com/vectors/benefit-cost-stamp-sign-seal-vector-id1008330672" width="146px" height="146px" alt="...">
+    <div class="underimages">
+      <p>Ótimo custo benefício
+         Preços baixos
+      </p>
+    </div>
+  </div>
+
+  <div class="mr-5 col-2" style="width: 10rem;">
+    <img src="http://zigma.com.br/wp-content/uploads/2016/10/importa%C3%A7%C3%A3o_selo.jpeg" width="146px" height="146px" alt="...">
+    <div class="underimages">
+      <p>Produtos importados e
+         Produtos originais
+      </p>
+    </div>
+  </div>
+  </div>
+    <br>
+    <h2 class="d-flex justify-content-center">TÊNIS DE ALTA QUALIDADE</h2>
+<div id="carouselExampleControls" class="carousel slide" data-ride="carousel">
+  <div class="carousel-inner">
+    <div class="carousel-item active">
+      <a href="/products">
+      <img class="d-block w-100" src="https://tonyrodrigues.files.wordpress.com/2012/02/nike.jpg" width="1920px" height="400px"  alt="First slide">
+    </a>
+    </div>
+    <div class="carousel-item">
+      <a href="/products">
+      <img class="d-block w-100" src="https://res.cloudinary.com/scentre-group-au/image/fetch/c_fill,q_auto,g_faces:auto,w_1152,h_768,f_auto/https://cam.scentregroup.io/m/6dd60117526dd195" width="1920px" height="400px" alt="Second slide">
+      </a>
+    </div>
+    <div class="carousel-item">
+        <a href="/products">
+      <img class="d-block w-100" src="https://creativosbr.com/wp-content/uploads/2016/5/nikestar.jpg" width="1920px" height="400px"   alt="Third slide">
+        </a>
+    </div>
+  </div>
+  <a class="carousel-control-prev" href="#carouselExampleControls" role="button" data-slide="prev">
+    <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+    <span class="sr-only">Previous</span>
+  </a>
+  <a class="carousel-control-next" href="#carouselExampleControls" role="button" data-slide="next">
+    <span class="carousel-control-next-icon" aria-hidden="true"></span>
+    <span class="sr-only">Next</span>
+  </a>
+</div>
+<ul class="products ">
+  {% for item in products %}
+  <li class=''>
+    <p class="title" title="{{ item.name }}">{{ item.name }}</p>
+    <br>
+    <p class="value d-flex justify-content-center" >{{ item.price.toLocaleString('pt-BR', { minimumFractionDigits: 2 , style: 'currency', currency: 'BRL' }) }}</p>
+    <p>
+      <img src="{{ item.url }}" width="100% alt="">
+    </p>
+    <a href="/product/{{ item.id }}" class="btn btn-outline-warning btn-block btn-sm">Ver mais</a>
+  </li>
+  {% endfor %}
+</ul>
+<div class="clearfix"></div>
+<br>
+<div id="carouselExampleControls" class="carousel slide" data-ride="carousel">
+  <div class="carousel-inner">
+    <div class="carousel-item active">
+      <a href="/products">
+      <img class="d-block w-100" src="https://dragonpharmabrasil.com/wp-content/uploads/2019/09/sardina_welcome_Banner3-1-1170x400.jpg" width="1920px" height="400px"  alt="First slide">
+    </a>
+    </div>
+    <div class="carousel-item">
+      <a href="/products">
+      <img class="d-block w-100" src="https://labradabrasil.com.br/site/wp-content/uploads/2017/07/BANNER-1350x450-Diego-Rosa-1350x450.jpg" width="1920px" height="400px" alt="Second slide">
+      </a>
+    </div>
+    <div class="carousel-item">
+        <a href="/products">
+      <img class="d-block w-100" src="https://dragonpharmabrasil.com/wp-content/uploads/2019/09/09-17-19-Banner-Blog-Post-Caike-Oliveira-2-1-1170x400.jpg" width="1920px" height="400px"   alt="Third slide">
+        </a>
+    </div>
+  </div>
+  <a class="carousel-control-prev" href="#carouselExampleControls" role="button" data-slide="prev">
+    <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+    <span class="sr-only">Previous</span>
+  </a>
+  <a class="carousel-control-next" href="#carouselExampleControls" role="button" data-slide="next">
+    <span class="carousel-control-next-icon" aria-hidden="true"></span>
+    <span class="sr-only">Next</span>
+  </a>
+</div>
+<hr>
+<br>
+
+
+
+{% endblock %}
+{% block title %}
+  Pagina inicial
+{% endblock %}
+{% block script %}
+  <script src="/js/index.js" charset="utf-8"></script>
+{% endblock %}
+
+{% block styles %}
+  <link rel="stylesheet" href="/styles/index.css">
+{% endblock %}

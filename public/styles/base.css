@@ -1,0 +1,48 @@
+
+form input {
+  width: 600px;
+}
+form button {
+  width: 92px;
+}
+
+body{
+  background-color: black;
+}
+
+div.logo img {
+  height: 200px;
+  width: 200px;
+}
+
+footer h5 {
+  color: red;
+}
+
+footer p {
+  color: white;
+}
+
+footer a {
+  color: white;
+}
+
+span a i.cart {
+  color: blue;
+  font-size: 30px;
+}
+
+span a span.notifications {
+  color: blue;
+  background-color: black;
+  font-size: 20px;
+}
+
+div.page {
+  background-color: blue;
+}
+
+@media screen and (max-width: 425px) {
+
+}
+const MONGODB_URL = 'mongodb://@localhost:27017/store';
