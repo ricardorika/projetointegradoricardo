@@ -7,7 +7,7 @@ form button {
 }
 
 body{
-  background-color: black;
+  background-color: white;
 }
 
 div.logo img {
@@ -16,15 +16,15 @@ div.logo img {
 }
 
 footer h5 {
-  color: red;
+  color: blue;
 }
 
 footer p {
-  color: white;
+  color: blue;
 }
 
 footer a {
-  color: white;
+  color: blue;
 }
 
 span a i.cart {
@@ -33,16 +33,15 @@ span a i.cart {
 }
 
 span a span.notifications {
-  color: blue;
-  background-color: black;
+  color: white;
+  background-color: white;
   font-size: 20px;
 }
 
 div.page {
-  background-color: blue;
+  background-color: white;
 }
 
 @media screen and (max-width: 425px) {
 
 }
-const MONGODB_URL = 'mongodb://@localhost:27017/store';

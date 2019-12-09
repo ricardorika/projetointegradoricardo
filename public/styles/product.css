@@ -3,8 +3,6 @@ body{
   }
 
   div.box {
-    background-image: url(https://www.lupmed.com.br/wp/wp-content/uploads/2016/09/carga.jpg);
-    background-repeat: no-repeat;
   }
 
   div h1 {
@@ -18,7 +16,7 @@ body{
   }
 
   div h2.description-title {
-    color: #F4B400;
+    color: white;
     font-family: fantasy;
   }
 
@@ -33,4 +31,3 @@ body{
     font-family: fantasy;
     font-size: 56px;
   }
-  

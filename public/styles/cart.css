@@ -9,23 +9,23 @@ body{
 
 div h6 {
   font-family: fantasy;
-  color: #F4B400;
+  color: white;
 }
 
 div label {
   font-family: fantasy;
-  color: #F4B400;
+  color: white;
 }
 
 div.first-box {
   background-color: white;
-  background-image: url(https://images5.alphacoders.com/774/774585.jpg);
+  background-image: url(http://2.bp.blogspot.com/-LFLDrVdSDoE/VlrzkWAv98I/AAAAAAAABIU/Vm93726uGLs/s1600/Neymar_01_A_native_1600.jpg);
   background-repeat: no-repeat;
 }
 
 div h5 {
   font-family: fantasy;
-  color: #F4B400;
+  color: white;
   font-size: 30px;
 }
 
