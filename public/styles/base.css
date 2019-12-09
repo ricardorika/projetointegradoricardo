@@ -11,29 +11,29 @@ body{
 }
 
 div.logo img {
-  height: 200px;
-  width: 200px;
+  height: 220px;
+  width: 250px;
 }
 
 footer h5 {
-  color: blue;
+  color: white;
 }
 
 footer p {
-  color: blue;
+  color: white;
 }
 
 footer a {
-  color: blue;
+  color: white;
 }
 
 span a i.cart {
-  color: blue;
+  color: black;
   font-size: 30px;
 }
 
 span a span.notifications {
-  color: white;
+  color: black;
   background-color: white;
   font-size: 20px;
 }

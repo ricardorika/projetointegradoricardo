@@ -34,10 +34,10 @@
         <div class="collapse navbar-collapse" id="navbarSupportedContent">
           <ul class="navbar-nav mr-auto">
             <li class="nav-item ">
-              <a class="nav-link btn btn-dark ml-5" href="/"><strong>Página inicial</strong></a>
+              <a class="nav-link btn ml-5" href="/"><strong>Página inicial</strong></a>
             </li>
             <li class="nav-item ">
-              <a class="nav-link btn btn-dark ml-5" href="/register"><strong>Cadastre-se</strong></a>
+              <a class="nav-link btn ml-5" href="/register"><strong>Cadastre-se</strong></a>
             </li>
 
             <!--<li class="nav-item">
@@ -45,15 +45,15 @@
             </li>-->
 
             <li class="nav-item ">
-              <a class="nav-link btn btn-dark ml-5" href="/contact"><strong>Contato</strong></a>
+              <a class="nav-link btn ml-5" href="/contact"><strong>Contato</strong></a>
             </li>
             <div class="dropdown">
-                <button class="dropdown-toggle mr-1 btn btn-dark font-weight-bold ml-5" type="button" id="dropdownMenuButton" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                <button class="dropdown-toggle mr-1 btn font-weight-bold ml-5" type="button" id="dropdownMenuButton" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
                   Categorias
                 </button>
                 <div class="page dropdown-menu ml-4" aria-labelledby="dropdownMenuButton">
                   {% for item in categories %}
-                    <li><a class="categoriesNames nav-link btn btn-dark" href="/c/{{ item.slug }}">{{ item.name }}</a></li>
+                    <li><a class="categoriesNames nav-link btn" href="/c/{{ item.slug }}">{{ item.name }}</a></li>
                   {% endfor %}
                 </div>
               </div>
@@ -80,16 +80,16 @@
         <div class="col-md-4 mx-auto">
             <h5 class="font-weight-bold text-uppercase mt-3 mb-4">iShoes Calçados</h5>
             <p>
-                CNPJ: 00.000.000/0000-00 <br>
-                CEP: 00000-000           <br>
-                Rua Teste, 207           <br>
-                Bairro: Teste            <br>
+                CNPJ: 12.333.555/0001-00 <br>
+                CEP: 99700-000        <br>
+                Rua Gaivotas, 12           <br>
+                Bairro: Centro          <br>
                 Cidade: Erechim / RS     <br>
-                Telefone: 54 1234-5678</p>
+                Telefone: 54 1334-5678</p>
           </div>
         <div class="col-md-4 mx-auto">
             <h5 class="font-weight-bold text-uppercase mt-3 mb-4">HORÁRIO DE ATENDIMENTO</h5>
-            <p>Seg. à Sex: 8h às 18h. <br>
+            <p>Seg. à Sex: 8h às 17h. <br>
                Sáb: 8h às 12h.        <br>
                Dom e Feriados: Fechado.</p>
           </div>
