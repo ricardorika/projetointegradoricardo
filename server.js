@@ -17,6 +17,8 @@ let env = nunjucks.configure('views', {
     express: app
 });
 
+var port = process.env.PORT || 3000;
+
 app.set('engine', env);
 
 require('useful-nunjucks-filters')(env);
@@ -33,10 +35,9 @@ mongoose.connect(MONGODB_URL, {useNewUrlParser: true}, err => {
     console.info('Mongo connected');
 
 
-    app.listen(3000, () => {
-      console.log('Escutando na porta 3000');
+     app.listen(port, () => {
+      console.log('Escutando na porta ' + port);
     });
-
 });
 
 
