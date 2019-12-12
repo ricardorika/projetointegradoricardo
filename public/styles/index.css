@@ -1,8 +1,10 @@
 body{
-  background-color: rgb(59, 59, 59);
+  background-color: black;
 }
 
-
+.btn {
+  color: blue;
+}
 .products {
   list-style: none;
   padding: 0;
@@ -12,9 +14,9 @@ body{
   margin-bottom: 20px;
   padding: 15px;
   width: 25%;
-  background-color: white;
-  border-right: white;
-  border-color: white;
+  background-color: orange;
+  border-right: blue;
+  border-color: blue;
   min-height: 380px;
   position: relative;
 }
@@ -49,26 +51,26 @@ body{
 
 h1{
   font-family: fantasy;
-  color: white;
+  color: orange;
 }
 
 div.underimages {
-  color: white;
+  color: yellow;
   font-family: sans-serif;
 }
 
 h2 {
-  color: white;
+  color: orange;
 }
 
 li p.title {
-  color: white;
+  color: blue;
   font-family: fantasy;
   font-size: 20px;
 }
 
 li p.value {
-  color: rgb(255, 238, 0);
+  color: blue;
   font-family: fantasy;
   font-size: 30px;
 }
@@ -96,7 +98,7 @@ li p.value {
   }
 
   div.underimages p {
-    color: white;
+    color: blue;
     font-family: sans-serif;
     font-size: 16px;
   }

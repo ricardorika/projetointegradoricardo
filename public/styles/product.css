@@ -3,32 +3,64 @@ body{
   }
 
   div.box {
+    background-color: black;
+    background-repeat: no-repeat;
   }
 
   div h1 {
     font-family: fantasy;
-    color: white;
+    color: orange;
   }
 
   div p.small {
-    color: white;
+    color: orange;
     font-size: 10px;
   }
 
   div h2.description-title {
-    color: white;
+    color: #F4B400;
     font-family: fantasy;
   }
 
   div p.p-3 {
-    color: white;
+    color: orange;
     font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
     font-size: 20px;
   }
 
   div h3{
-    color: green;
+    color: blue;
     font-family: fantasy;
     font-size: 56px;
   }
-footer 
+
+@media screen and (max-width: 768px) {
+  div.box {
+    background-image: none;
+    background-color: grey;
+  }
+
+  div.box h3 {
+    font-size: 30px;
+  }
+
+  div.box h1 {
+    font-size: 30px;
+  }
+
+  div p.p-3 {
+    color: white;
+    font-size: 15px;
+  }
+
+  div p.p-3 img {
+    height: 250px;
+    width: 280px;
+    margin: 0;
+    position: relative;
+    top: 100px;
+    left: 50%;
+    margin-right: -50%;
+    transform: translate(-50%, -50%)
+  }
+}

@@ -10,7 +10,7 @@ const CategoriesSchema = require('./schemas/Categories');
 const md5 = require('md5');
 
 
-const MONGODB_URL = 'mongodb://@localhost:27017/store';
+const MONGODB_URL = 'mongodb+srv://ricardorika:220892@cluster0-8giht.mongodb.net/store?retryWrites=true&w=majority';
 
 let env = nunjucks.configure('views', {
     autoescape: true,
