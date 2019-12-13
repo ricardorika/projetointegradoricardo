@@ -8,6 +8,10 @@
 h1 {
 	color:black;
 }
+.navbar {
+  background-color: yellow;
+}
+
 
 body{
   background-color: rgb(59, 59, 59);
@@ -68,6 +72,17 @@ li p.value {
   color: orange;
   font-family: fantasy;
   font-size: 30px;
+}
+footer h5 {
+  color: white;
+}
+
+footer p {
+  color: white;
+}
+
+footer a {
+  color: white;
 }
 
 @media screen and (max-width: 420px) {

@@ -7,7 +7,7 @@ function saveCart () {
 
 function addQuantity (cartItemId) {
   var item = cart.find(function (cartItem) {
-      return cartItem.id == cartItemId;
+      return cartItem._id == cartItemId;
   });
   item.quantity++;
   saveCart();
@@ -27,7 +27,7 @@ function subQuantity (cartItemId) {
 
 function deleteItem (cartItemId) {
   cart = cart.filter(function (cartItem) {
-    return cartItem.id != cartItemId;
+    return cartItem._id != cartItemId;
   });
   toastr["error"]("Carrinho", "Item removido");
   saveCart();
@@ -50,19 +50,19 @@ function showCart () {
       var sub = $('<a class="btn btn-sm ml-1 btn-outline-danger" href>-</a>');
       var del = $('<a class="btn btn-sm ml-3 btn-danger" href>Excluir</a>');
 
-      add.attr('cart-item', cart[i].id);
+      add.attr('cart-item', cart[i]._id);
       add.click(function (e) {
         e.preventDefault();
         addQuantity($(this).attr('cart-item'));
       });
 
-      sub.attr('cart-item', cart[i].id);
+      sub.attr('cart-item', cart[i]._id);
       sub.click(function (e) {
         e.preventDefault();
         subQuantity($(this).attr('cart-item'));
       })
 
-      del.attr('cart-item', cart[i].id);
+      del.attr('cart-item', cart[i]._id);
       del.click(function (e) {
         e.preventDefault();
         deleteItem($(this).attr('cart-item'));

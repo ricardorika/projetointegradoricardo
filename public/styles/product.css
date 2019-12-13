@@ -1,6 +1,10 @@
 body{
     background-color: rgb(59, 59, 59);
   }
+.navbar {
+  background-color: yellow;
+}
+
 
   div.box {
     background-color: black;
@@ -11,6 +15,11 @@ body{
     font-family: fantasy;
     color: orange;
   }
+span a i.cart {
+  color: black;
+  font-size: 30px;
+}
+
 
   div p.small {
     color: orange;
@@ -33,6 +42,17 @@ body{
     font-family: fantasy;
     font-size: 56px;
   }
+footer h5 {
+  color: white;
+}
+
+footer p {
+  color: white;
+}
+
+footer a {
+  color: white;
+}
 
 @media screen and (max-width: 768px) {
   div.box {

@@ -41,10 +41,6 @@ span a span.notifications {
 div.page {
   background-color: orange;
 }
-
-@media screen and (max-width: 425px) {
-
-}
 .nav-link btn ml-5 {
   color: black;
 }
@@ -52,3 +48,9 @@ div.page {
 .navbar {
   background-color: yellow;
 }
+
+
+@media screen and (max-width: 425px) {
+
+}
+
