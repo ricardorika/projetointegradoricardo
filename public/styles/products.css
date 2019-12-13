@@ -32,9 +32,10 @@ h1{
   padding: 15px;
   width: 25%;
   background-color: grey;
-  border-right: 2px solid grey;
-  border-color: black;
+  border-right: 2px solid orange;
+  border-color: orange;
   min-height: 380px;
+  border-left: 2px solid orange;
   position: relative;
 }
 .products p {
@@ -69,7 +70,7 @@ li p.title {
 }
 
 li p.value {
-  color: orange;
+  color: blue;
   font-family: fantasy;
   font-size: 30px;
 }

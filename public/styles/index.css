@@ -14,7 +14,7 @@ body{
   margin-bottom: 20px;
   padding: 15px;
   width: 25%;
-  background-color: orange;
+  background-color: grey;
   border-right: blue;
   border-color: blue;
   min-height: 380px;
@@ -64,7 +64,7 @@ h2 {
 }
 
 li p.title {
-  color: blue;
+  color: black;
   font-family: fantasy;
   font-size: 20px;
 }
