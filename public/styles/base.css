@@ -48,3 +48,7 @@ div.page {
 .nav-link btn ml-5 {
   color: black;
 }
+
+.navbar {
+  background-color: yellow;
+}
